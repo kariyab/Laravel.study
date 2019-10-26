@@ -23,17 +23,17 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2">性別</label>
+                        <label class="col-md-2" for="gender">性別</label>
                         <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" name="gender" id="male">
+                            <input type="radio" class="form-check-input" name="gender" value="male">
                             <label class="form-check-label" for="male">男性</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" name="gender" id="female">
+                            <input type="radio" class="form-check-input" name="gender" value="female">
                             <label class="form-check-label" for="female">女性</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" name="gender" id="unanswered" checked>
+                            <input type="radio" class="form-check-input" name="gender" value="unanswered" checked>
                             <label class="form-check-label" for="unanswered">未回答</label>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                     <div class="form-group row">
                         <label class="col-md-2">自己紹介欄</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="introductin" rows="10">{{ old('introductin') }}</textarea>
+                            <textarea class="form-control" name="introduction" rows="10">{{ old('introductin') }}</textarea>
                         </div>
                     </div>
                     {{ csrf_field() }}
