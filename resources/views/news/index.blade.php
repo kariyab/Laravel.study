@@ -1,5 +1,10 @@
 @extends('layouts.front')
 
+@section('title')
+かーりーのページ
+@endsection
+<p> かーりーのページ </p>
+
 @section('content')
     <div class="container">
         <hr color="#c0c0c0">
