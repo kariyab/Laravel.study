@@ -25,15 +25,15 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="gender">性別</label>
                         <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" name="gender" value="male">
+                            <input type="radio" class="form-check-input" name="gender" value="男性">
                             <label class="form-check-label" for="male">男性</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" name="gender" value="female">
+                            <input type="radio" class="form-check-input" name="gender" value="女性">
                             <label class="form-check-label" for="female">女性</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" name="gender" value="unanswered" checked>
+                            <input type="radio" class="form-check-input" name="gender" value="未回答" checked>
                             <label class="form-check-label" for="unanswered">未回答</label>
                         </div>
                     </div>
