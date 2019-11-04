@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use App\News;
 use App\History;
 use Carbon\Carbon;
-use storage;
+use Storage;
 
 class NewsController extends Controller
 {
@@ -33,7 +33,7 @@ class NewsController extends Controller
 
       // formに画像があれば、保存する
       if (isset($form['image'])) {
-        $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
+        $path = Storage::disk('s3')->putFile('/', $form['image'],'public');
         $news->image_path = Storage::disk('s3')->url($path);
       } else {
           $news->image_path = null;
@@ -86,7 +86,7 @@ class NewsController extends Controller
       $news_form = $request->all();
       //text27>26
       if (isset($news_form['image'])) {
-        $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
+        $path = Storage::disk('s3')->putFile('/', $news_form['image'],'public');
         $news->image_path = Storage::disk('s3')->url($path);
         unset($news_form['image']);
       } elseif (isset($request->remove)) {
