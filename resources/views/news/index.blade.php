@@ -3,7 +3,7 @@
 @section('title')
 かーりーのページ
 @endsection
-<p> かーりーのページ </p>
+<p> --かーりーのページ-- </p>
 
 @section('content')
     <div class="container">
