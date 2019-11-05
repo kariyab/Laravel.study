@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.profile')
 @section('title', '登録済みプロフィールの一覧')
 
 @section('content')
@@ -13,7 +13,7 @@
             <div class="col-md-8">
                 <form action="{{ action('Admin\ProfileController@index') }}" method="get">
                     <div class="form-group row">
-                        <label class="col-md-2">タイトル</label>
+                        <label class="col-md-2">氏名</label>
                         <div class="col-md-8">
                             <input type="text" class="form-control" name="cond_title" value="{{ $cond_title }}">
                         </div>
